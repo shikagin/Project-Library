@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 15px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px 12px;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    width: 200px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #555;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: #888;
+}
+
+.search-bar button:hover {
+    background-color: #666;
+}
+
+
+.bookSection{
+
+    display: grid;
+
+    gap: 100px;
+    grid-template:1fr 1fr / 1fr 1fr ;
+    grid-auto-flow: 1fr / 1fr ;
+    background-color: #d2d2d2;
+    
+    padding : 100px ;
+}
+
+.bookSection > div {
+    padding: 40px;
+    border: #6f6e6e solid 4px ;
+    border-radius: 12px;
+    background-color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap :20px;
+}
