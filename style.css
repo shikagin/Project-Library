@@ -3,9 +3,19 @@
     padding: 0;
   
 }
+.new , .delete {
+    border: none;
+    background-color:#ccc;
+    border-radius: 4px;
+    color: #444444;
+    font-weight:1000;
+    height: 40px;
+    width: 100px;
+}
 
 body {
     font-family: Arial, sans-serif;
+
 }
 
 header {
@@ -22,6 +32,7 @@ header {
 
 h1 {
     font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .search-bar {
@@ -47,7 +58,7 @@ h1 {
     font-size: 16px;
 }
 
-.search-bar input:focus {
+.search-bar input:focus  {
     outline: none;
     border-color: #888;
 }
@@ -64,10 +75,64 @@ h1 {
     gap: 100px;
     grid-template:1fr 1fr / 1fr 1fr ;
     grid-auto-flow: 1fr / 1fr ;
+
     background-color: #d2d2d2;
-    
+
     padding : 100px ;
 }
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    background-color: #888;
+    border: 5px solid #888;
+   
+    z-index: 9;
+  }
+
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 14px;
+    background-color: white;
+  }
+
+  .form-container input[type=text], .form-container input[type=number] , .form-container select {
+    width: 100%;
+    padding-right:2 px;
+    padding: 10px 0px 10px 2px  ;
+    overflow: hidden;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  .form-container .btn , .form-container .btn2{
+    background-color: #606060;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  .form-container .cancel {
+    background-color: rgb(184, 184, 184);
+  }
+  
+ 
+  .form-container .btn:hover, .open-button:hover {
+
+    opacity: 1;
+  }
 
 .bookSection > div {
     padding: 40px;
@@ -79,3 +144,6 @@ h1 {
     flex-direction: column;
     gap :20px;
 }
+
+
+

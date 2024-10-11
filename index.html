@@ -14,13 +14,64 @@
             <div class="search-bar">
                 <input type="text" placeholder="Search...">
                 <button type="submit">🔍</button>
+              
             </div>
+            
+            <button class="new" onclick="openForm()">NEW BOOK</button>
+            <button class="delete" onclick="openForm2()">DELET BOOK</button>
         </div>
     </header>
 
-    <div class="bookSection">
-            
-    </div>
+     <div class="bookSection"> 
+     </div>
+        <div class="form-popup" id="myForm">
+
+            <form action="/action_page.php" class="form-container">
+              <h1> ADD A BOOK</h1>
+          
+              <label for="titel"><b>Titel</b></label>
+              <input class ="titel" type="text" placeholder="Enter the titel" name="titel" required>
+          
+              <label for="author"><b>Author</b></label>
+              <input class="author" type="text" placeholder="Enter the author" name="author" required>
+
+              <label for="pages"><b>Pages</b></label>
+              <input class="pages" type="number" name="pages" placeholder="pages" required>
+
+             
+              <select  class="read" name="read">
+                <option value="Finished">Finished</option>
+                <option value="Not Finished">Not Finished</option>
+              </select>
+          
+
+
+
+              <button type="submit" class="btn">Add book</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+         
+             
+        </div> 
+
+        <div class="form-popup" id="myForm2">
+
+            <form action="/action_page.php" class="form-container">
+              <h1> DELETE A BOOK</h1>
+          
+              <label for="titel"><b>Titel</b></label>
+              <input class ="titel2" type="text" placeholder="Enter the titel" name="titel" required>
+              <button type="submit" class="btn2">Delete book</button>
+              <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+            </form>
+
+        </div>
     
 </body>
 </html>
+
+
+
+
+
+
