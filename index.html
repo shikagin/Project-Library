@@ -10,15 +10,17 @@
 <body>
     <header>
         <div class="header-container">
-            <h1>Search for ur book</h1>
+            <button class="home"><h1>HOME</h1></button>
             <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <button type="submit">🔍</button>
+                <input type="text" class="search"  placeholder="Search...">
+                <button type="submit" class="search_btn">🔍</button>
               
             </div>
+            <div>
+                <button class="new" onclick="openForm()">NEW BOOK</button>
+                <button class="delete" onclick="openForm2()">DELET BOOK</button>
+            </div>
             
-            <button class="new" onclick="openForm()">NEW BOOK</button>
-            <button class="delete" onclick="openForm2()">DELET BOOK</button>
         </div>
     </header>
 
@@ -39,7 +41,7 @@
               <input class="pages" type="number" name="pages" placeholder="pages" required>
 
              
-              <select  class="read" name="read">
+              <select  class="read" name="read" >
                 <option value="Finished">Finished</option>
                 <option value="Not Finished">Not Finished</option>
               </select>
@@ -56,7 +58,7 @@
 
         <div class="form-popup" id="myForm2">
 
-            <form action="/action_page.php" class="form-container">
+            <form action="/action_page.php" class="form-container" id="forma">
               <h1> DELETE A BOOK</h1>
           
               <label for="titel"><b>Titel</b></label>

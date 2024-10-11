@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+
+    
   
 }
 .new , .delete {
@@ -14,7 +16,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: ROBOTO;
 
 }
 
@@ -99,6 +101,8 @@ h1 {
     background-color: white;
   }
 
+ 
+
   .form-container input[type=text], .form-container input[type=number] , .form-container select {
     width: 100%;
     padding-right:2 px;
@@ -145,5 +149,15 @@ h1 {
     gap :20px;
 }
 
+.home{
+  background-color: #33333386;
+  border: none;
+  color: #ccc;
+  
+}
 
+input[type=checkbox]{
 
+ accent-color: #333;
+  
+}
